@@ -7,10 +7,10 @@ const Nav = () => {
                 <div>
                     <h1 className='font-semibold text-lg max-lg:text-xs'>Notulen Desa - Kab. Banyuwangi</h1>
                 </div>
-                <div className='flex max-lg:hidden items-center gap-5 max-lg:text-xs'>
+                {/* <div className='flex max-lg:hidden items-center gap-5 max-lg:text-xs'>
                     <span>Maps</span>
                     <span>Layer</span>
-                </div>
+                </div> */}
             </nav>
 
         </header>

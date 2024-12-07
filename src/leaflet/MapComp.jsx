@@ -41,7 +41,7 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
                     <div className='leaflet-top max-lg:hidden leaflet-right leaflet-control map-legend mx-5 my-5'>
                         <div className='bg-white px-5 py-5 rounded-lg shadow-md flex flex-col gap-2 text-gray-500 text-xs'>
                             {kecamatan.map((item, idx) => (
-                                <div className='flex items-center gap-1'>
+                                <div key={idx} className='flex items-center gap-1'>
                                     <PiCircleFill
                                         color={`${item.color}`}
                                         style={{

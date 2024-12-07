@@ -148,7 +148,7 @@ const LeafletMap = () => {
                                     Jawaban
                                 </button>
                             </div>
-                            <h1 className='font-semibold mb-1'># {nameCat}</h1>
+                            <h1 className='font-semibold mb-1'>{nameCat}</h1>
                             {select === "req" ?
                                 <ul className='list-decimal mx-7 text-sm space-y-1'>
                                     {
