@@ -1,0 +1,174 @@
+[
+    {
+        "id": "id3510100",
+        "district": "Genteng",
+        "data": {
+            "waktu": "Selasa, 4 Desember 2024",
+            "alamat": "Kantor Kecamatan Genteng",
+            "content": [
+                {
+                    "id_village": "id3510100",
+                    "name_village": "",
+                    "type": "req",
+                    "data": [
+                        [
+                            "Dokumen Peraturan Pengelolaan Sampah",
+                            "Sudah disosialisasikan ke masyarakat?",
+                            "Apakah sudah pernah di evaluasi?",
+                            "Apa kendala pemerintah desa dalam menyusun peraturan?",
+                            "Apakah ada musyawarah desa Tematik persampahan?",
+                            "Pernahkan ada himbauan atau instruksi tentang persampahan dan PemKab / PemKec?",
+                            "Pernahkah ada pendampingan dari PemKab / PemKec mengenai persampahan?",
+                            "Jelaskan tindaklanjut dari pendampingan poin 7"
+                        ],
+                        [
+                            "Adakah lembaga khusus yang menangani pelayanan kebersihan/sampah warga dan siapa (Lembaga mandiri / Lainnya)?",
+                            "Bagaimana pola manajemen layanan kebersihan di Desa (terpusat desa / terdelegasi ke sejumlah agen / lainnya)? ",
+                            "Adakah pihak lain yang berkolaborasi dalam pelayanan kebersihan di Desa (sekolah / dunia usaha / Lembaga pemerintahan / lainnya)",
+                            "Adakah strategi pengembangan layanan kebersihan di desa dan adakah dokumen tertulisnya?"
+                        ],
+                        [
+                            "Adakah iuran kebersihan atau iuran angkut sampah? dan Berapa kisaran nominal iuran ",
+                            "Bagaimana model pengelolaan dana (skema pembayaran iuran) (subsidi murni / Subsidi silang / Swadaya murni)?",
+                            "Sumber pembayaran layanan kebersihan ",
+                            "Kategori biaya operasional layanan sampah (Sehat/Tidak sehat)?",
+                            "Adakah kendala dalam pengelolaan dana program kebersihan? ",
+                            "(Iuran silang) adakah rencana perluasan sumber pendanaan program layanan kebersihan? ",
+                            "Adakah usulan atau harapan terkait managemen pembiayaan program kebersihan "
+                        ],
+                        [
+                            "Apakah desa mempunyai lahan khusus TPS, TPS, TPS3R",
+                            "Status lahan TPA (Milik desa / Sewa / Lainnya)",
+                            "Apakah sudah dibangun dan berfungsi?",
+                            "Siapa pengelolahnya (Bumdes / KSM / DLH / Lainnya)",
+                            "Apakah di desa ada kegiatan 3R (Reduce, Reuse, Recycle) Inisiasi perorangan, kelompok, atau lainnya? ",
+                            "Kelengkapan sarana yang dimiliki dan berapa jumlahnya (armada angkut, alat pemilah, sirkuit pengolahan, limbah organik, atau lainnya",
+                            "Apakah setiap rumah punya tempat sampah dan berapa persen yang punya (dalam keadaan tertutup dan terpilah)? "
+                        ],
+                        [
+                            "Apakah pernah ada kegiatan sosialisasi kebersihan dan",
+                            "Siapa yang menyelenggarakan (Pemerintah / KSM / LSM / lainnya) ",
+                            "Materinya apa saja ",
+                            "Siapa yang paling berpengaruh dalam meningkatkan partisipasi masyarakat?",
+                            "Bagaimana mereka memberikan pengaruh",
+                            "Berapa persen rumah tangga yang sudah ikut program kebersihan layanan kebersihan (Layanan jemput sampah)",
+                            "Alasan / keberatan warga yang belum ikut program kebersihan",
+                            "Prioritas apa yang harus dilakukan agar partisipasi warga meningkat dalam program kebersihan"
+                        ]
+                    ]
+                },
+                {
+                    "id_village": "id3510100001",
+                    "name_village": "Desa Kaligondo",
+                    "type": "answer",
+                    "data": [
+                        [
+                            "Ada perdes, perdes pemungutan / perdes no 2 tahun 2022.  Sudah ada regulasi yang dibuat oleh BPD (dilarang membakar sampah/ terutama masyarakat petani)",
+                            "Melaui medsos SID; Melalui masyarakat",
+                            "Mengumpulkan masyarakat sebelum dan sesudah diperdeskan",
+                            "Tidak ada",
+                            "Ada 2, yaitu kelembagaan tahun 2023; penyertaan model tahun 2023",
+                            "Ada, surat edaran dari Kabupaten Banyuwangi tahun 2023",
+                            "Melalui pustu dan puskesmas; pendampingan PHBS",
+                            "Meningkatnya pelanggan unit sampah dari 40 hingga 210"
+                        ],
+                        [
+                            "Ada.  Dibawah manajemen bumdes menjadi struktur organisasi yang menyerap tenaga kerja 5 orang dan hanya beroperasi dilingkungan desa. ",
+                            "Unit usaha bumdes ",
+                            "Ada petugas yang mengambil di tiap tiap rumah. Terdelegasi ke desa/TPS ",
+                            "Ada, berkolaborasi dengan PPL untuk membuat pupuk kompos ",
+                            "Ada, rencana bekerjasama dengan TPS Desa Balak rencana masih secara proposal ",
+                            "SDGS dan IDM "
+                        ],
+                        [
+                            "Ada iuran sampah sebesar 20-30ribu ",
+                            "Swadaya murni untuk biaya operasional; gaji karyawan; dan perawatan ",
+                            "Iuran, hasil jual kilohan sampah, dan puupuk kompos ",
+                            "Sehat, sementara normal, kadang untung, juga kadang minus. Dengan omset 5.000.000-6.000.000 menghasilkan surplus 200.000 ",
+                            "Belum bisa memenuhi untuk mengambangan ",
+                            "Ada mengajukan penyertaan dari desa, CSR, kerjasama TPS3R Balak (proposal dan belum sempat ditindaklanjut) ",
+                            "Ada, tempat/tong sampah depan rumah; nonorganic dan organic "
+                        ],
+                        [
+                            "Ada TPS luas lahan 1 hektar. system bagi hasil. TPS sudah ada dan berfungsi (gudang dan balai ",
+                            "Pokmas “Nature fresh” ",
+                            "Ada dari inisiasi kelompok, untuk reduce; penggunaan kembali botol, Bumdes beralih gelas plastic ke gelas kertas ",
+                            "Mesin pencacah 1; armada viar 2; Gudang 1; balai 1 ",
+                            "Ada ",
+                            "Tertutp 20% ",
+                            "Terpilah 5% ",
+                            "Terbuka 75% ",
+                            "Mendapat juara 3 lingkungan hidup tingkat kabupaten.  Masih butuh bantuan untuk pupuk organic minim lahan untuk fermentasi.  Ada kerjasama dengan penyuluh pertanian untuk pupuk pengganti. Ada teknologi milik pak eko (swasta dan belum bekerja sama dengan desa, hanya mengadakan Pelatihan Bersama 600 petani) yang dikenal dengan pupuk genderuwo yang sampai di ekspor  "
+                        ],
+                        [
+                            "PERAH, BUMDES KERJASAMA DENGAN SMP 2 GENTENG ",
+                            "- ",
+                            "MATERI SOSIALISASI MENGENAI PENGOLAHAN SAMPAH DAN MEMILAH SAMPAH (TEORI DAN PRAKEK). PESERTA DARI SISWA SMPN 2 GENTENG DA WARGA DUSUN SELOREJO ",
+                            "KEPALA DESA, PBD, DAN KEPALA DUSUN ",
+                            "MENGATUR KEBIJAKAN DAN MEMBUAT PERATURAN ",
+                            "25% ",
+                            "LAHAN MASIH LUAS BAGI MASYARAKAT ",
+                            "MEYEDIAKAN TEMPAT SAMPAH TERPILAH DI MASING-MASING RUMAH, MENGEMBANGKAN BANK SAMPAH, DA LOMBA KEBERSIHAN TINGKAT DUSUN ",
+                            " PEMUKIMAN MAKIN PADAT SEHINGGA SAMPAH MENJADI MASALAH SEHINGGA TERBETUKLAH PELAYANAN SAMPAH "
+                        ]
+                    ]
+                },
+                {
+                    "id_village": "id3510100005",
+                    "name_village": "Desa Kembiritan",
+                    "type": "answer",
+                    "data": [
+                        [
+                            "Belum ada perdes tapi ada himbauan tertulis ditempat tertentu missal di jembatan ",
+                            "Belum ada ",
+                            "Belum ada ",
+                            "Belum adanya kesadaran masyarakat tentang pengolahan sampah ",
+                            "Pernah ada tanggal 27 oktober 2024 di musdes RKP Des 2025 tentang pengelolaan sampah; penyertaan modal; dan tempat pembuangan air ",
+                            "Ada pengumpulan RT/RW sedesa bulan 6 tahun 2024 tentang kebersihan ",
+                            "Ada pendampingan dari PKM terkait kebersihan lingkunagn dan demam berdarah ",
+                            "Masyarakat lebih sadar pentingnya kebersihan. Contoh; tidak buang sampah sembarangan dan masyarakat lebih kreatif mengolah bungkus kopi",
+                            "Ada petugas yang mengambil dirumah rumah "
+                        ],
+                        [
+                            "Belum ada Lembaga, Cuma ada kelompok masyarakat yang peduli sampah ",
+                            "Ada petugas yang mengambil dirumah rumah ",
+                            "– ",
+                            "Ada sedekah sampah hasilnya untuk biaya kematian orang sakit ",
+                            "Ada mengembangkan studi tiru di malang deprogram tahun 2023 ",
+                            "Ada dokumen perencanaan kerjasama dengan studi tiru di malang "
+                        ],
+                        [
+                            "ada tiap 1 bilan Rp 10.000/rumah. pihak swasta ",
+                            "swadaya murni ",
+                            "individu ",
+                            "sehat karena masih berjalan ",
+                            "tidak ada masalah ",
+                            "rencana sumber pendanaan pengelola sampah dari dana desa ",
+                            "minta alat pencacah untuk pengelolaan sampah plastic dan organic. Bimtek pengelolaan keuangan sampah "
+                        ],
+                        [
+                            "Belum punya rencana TPA luas ½ hektar. Status tanah murni ",
+                            "- ",
+                            "Belum ",
+                            "Kelompok bungkus kopi dijadikan tas, dikerjakan perorangan; bumdespunya kafe mengganti gelas plastic dengan gelas kertas untuk mengurangi sampah plastic ",
+                            "Kelompok kecil pokmas/remas Baitul mutaqin. Gerobak 1, sampah 60 buah ",
+                            "Ada sewa tempat sampah tiap rumah 20% tertutup; 5% terpilah; sisanya terbuka ",
+                            " ",
+                            "Pengelolaan secara besar belum ada. Hanya ada pengelolaan perorangan namun sudah sampai mengambil sampah di RS dan Perum yang menghasilkan nilai ekonomis. Banyak sampah organic tapi tidak ada edukasi. Sampah anorganik diarahkan untuk rosokan dan harapannya pengohalan sampah ini diarahkan "
+                        ],
+                        [
+                            "Pernah, pengelolaan sampah dari pemerintah dan kerjasama dari pihak lain ",
+                            "Seluruh masyarakat ",
+                            "Pemubatan pupuk organic cair dan kering ",
+                            "Kepala Desa dan Kepala Dusun ",
+                            "Pengaruh himbaua beliau diperhatika oleh masyarakat ",
+                            "4,7% perdesa (hanya di perumahan) ",
+                            "Karena layanan pengelolaan sampah itu masih di lokasi tertentu (perumahan) ",
+                            "Pemberian reward dan lomba kebersihan lingkungan "
+                        ]
+                    ]
+                }
+            ]
+        }
+    }
+]
