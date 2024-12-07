@@ -27,10 +27,10 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
     
 
     return (
-        <div className='relative py-5 px-10'>
+        <div className='relative py-5 px-10 max-lg:px-5'>
             <div className='sticky top-20'>
                 <MapContainer
-                    className='border-[1px] border-black rounded-lg w-[600px] h-[600px] max-lg:h-[350px] max-lg:w-[300px]'
+                    className='border-[1px] border-black rounded-lg w-[600px] h-[600px] max-lg:h-[350px] max-lg:w-[340px]'
                     center={position} zoom={9.5}
                     scrollWheelZoom={true}>
                     <TileLayer

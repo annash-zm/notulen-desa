@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nav = () => {
     return (
-        <header style={{ zIndex: 9999 }} className='sticky top-0 bg-white shadow-sm px-10 py-5'>
+        <header style={{ zIndex: 9999 }} className='sticky top-0 bg-white shadow-sm px-10 max-lg:px-5 py-5'>
             <nav className='flex items-center justify-between'>
                 <div>
                     <h1 className='font-semibold text-lg max-lg:text-xs'>Notulen Desa - Kab. Banyuwangi</h1>

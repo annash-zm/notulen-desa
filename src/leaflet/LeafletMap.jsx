@@ -51,7 +51,7 @@ const LeafletMap = () => {
         <section className='flex flex-col'>
             <Nav />
             <div className='bg-indigo-50 '>
-                <div className='px-10 mt-5'>
+                <div className='px-10 max-lg:px-5 mt-5'>
                     <div className='bg-indigo-100 flex flex-col rounded-lg border-[1px] border-indigo-500 p-3'>
                         <div className='flex items-center gap-1 '>
                             <CgNotes
@@ -65,7 +65,7 @@ const LeafletMap = () => {
                 </div>
                 <div className='grid grid-cols-2 max-lg:flex max-lg:flex-col'>
                     <MapComp setRegulasi={setRegulasi} setVillage={setVillage} setClickMap={setClickMap} />
-                    <div className='bg-white rounded-lg my-5 mx-10 border-[1px] border-black pb-5 max-lg:text-xs'>
+                    <div className='bg-white rounded-lg my-5 mx-10 max-lg:mx-5 border-[1px] border-black pb-5 max-lg:text-xs'>
                         <div className='flex flex-col px-5 pt-5 mb-3'>
                             <h1 className='font-semibold'>Notulen {data?.filter(e => e.id === regulasi)[0]?.district} - {data?.filter(e => e.id === regulasi)[0]?.data?.content?.filter(e => e.id_village === village)[0]?.name_village}</h1>
                             <span className='text-sm max-lg:text-xs'>Diskusi Kelompok Terarah “Studi Awal Perilaku Pengelolaan Sampah Tingkat Desa”</span>
@@ -119,6 +119,7 @@ const LeafletMap = () => {
                                 className="basic-single w-1/2 max-lg:w-full"
                                 classNamePrefix="select"
                                 name="color"
+                                isSearchable={false}
                                 options={options}
                                 defaultValue={options[category]}
                                 onChange={(e) => {
