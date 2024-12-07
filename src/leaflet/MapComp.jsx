@@ -79,8 +79,6 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
                                 data={Bwi.features.filter(e => e.properties.district_code === item.id)}
                                 onEachFeature={(district, layer) => {
                                     const districtName = district.properties.village + ', ' + district.properties.district;
-                                    //console.log(districtName);
-                                    //layer.bindPopup(districtName);
                                     layer.on({
                                         click: function (e) {
                                             layer.bindPopup(districtName).openPopup();

@@ -35,7 +35,10 @@ const LeafletMap = () => {
     const [content, setContent] = useState(data?.find(e => e.id === regulasi)?.data?.content)
     const [clickMap, setClickMap] = useState()
     useEffect(() => {
-        if (data?.filter(e => e.id === regulasi)?.length === 0 && !clickMap) {
+        //if idDistrict exist
+        const vill = data?.find(e => e.id === regulasi)?.data?.content?.filter(e=>e.id_village === village)?.length
+        const dist = data?.filter(e => e.id === regulasi)?.length
+        if ( (dist === 0 || vill === 0) && !clickMap) {
             Swal.fire({
                 title: 'Error',
                 text: 'Data di desa ini tidak ada',
@@ -116,7 +119,7 @@ const LeafletMap = () => {
                                 Pilih Kategori
                             </span>
                             <Select
-                                className="basic-single w-1/2 max-lg:w-full"
+                                className="basic-single w-1/2 max-lg:w-full text-sm"
                                 classNamePrefix="select"
                                 name="color"
                                 isSearchable={false}
