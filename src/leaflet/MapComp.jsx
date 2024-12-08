@@ -7,14 +7,17 @@ import { useState } from 'react';
 
 
 
-const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
+const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
     const position = [-8.17135, 114.2840704]
-    const [kecamatan, setKecamatan] = useState([
-        { id: 'id3510100', color: 'blue', villageName : "Genteng" },
-        { id: 'id3510210', color: 'yellow', villageName : "Wongsorejo" },
-        { id: 'id3510080', color: 'cyan', villageName : "Glenmore" },
-        { id: 'id3510090', color: 'purple', villageName : "Kalibaru" }
-    ])
+    // const [kecamatan, setKecamatan] = useState([
+    //     { id: 'id3510100', color: 'blue', villageName : "Genteng" },
+    //     { id: 'id3510210', color: 'yellow', villageName : "Wongsorejo" },
+    //     { id: 'id3510080', color: 'cyan', villageName : "Glenmore" },
+    //     { id: 'id3510090', color: 'purple', villageName : "Kalibaru" }
+    // ])
+    //console.log(layer.find(e=>e.id === regulasi))
+
+    const data = layer
 
     const CloseAll = () => {
         const map = useMap()
@@ -24,7 +27,7 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
     }
 
 
-    
+
 
     return (
         <div className='relative py-5 px-10 max-lg:px-5'>
@@ -40,7 +43,7 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
                     <CloseAll />
                     <div className='leaflet-top max-lg:hidden leaflet-right leaflet-control map-legend mx-5 my-5'>
                         <div className='bg-white px-5 py-5 rounded-lg shadow-md flex flex-col gap-2 text-gray-500 text-xs'>
-                            {kecamatan.map((item, idx) => (
+                            {data.map((item, idx) => (
                                 <div key={idx} className='flex items-center gap-1'>
                                     <PiCircleFill
                                         color={`${item.color}`}
@@ -49,7 +52,7 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
                                         }}
                                     />
                                     <span className=''>
-                                        {item.villageName}
+                                        {item.district}
                                     </span>
                                 </div>
                             ))}
@@ -67,45 +70,54 @@ const MapComp = ({ setRegulasi, setVillage, setClickMap }) => {
                     />
 
                     {
-                        kecamatan.map((item, idx) => (
-                            <GeoJSON
-                                key={idx}
-                                style={{
-                                    fillColor: `${item.color}`,
-                                    fillOpacity: 0.5,
-                                    color: "black",
-                                    weight: 0.5,
-                                }}
-                                data={Bwi.features.filter(e => e.properties.district_code === item.id)}
-                                onEachFeature={(district, layer) => {
-                                    const districtName = district.properties.village + ', ' + district.properties.district;
-                                    layer.on({
-                                        click: function (e) {
-                                            layer.bindPopup(districtName).openPopup();
-                                            setRegulasi(e.target.feature.properties.district_code)
-                                            setVillage(e.target.feature.properties.village_code)
-                                            setClickMap(false)
-                                        }
-                                    })
+                        data.map((item, idx) => (
+                            item.data.content.map((t, i) => (
+                                <GeoJSON
+                                    key={i}
+                                    style={{
+                                        fillColor: `${item.color}`,
+                                        fillOpacity: 0.5,
+                                        color: "black",
+                                        weight: 0.5,
+                                    }}
+                                    data={Bwi.features.filter(e => e.properties.district_code === item.id).filter(e => e.properties.village_code === t.id_village)}
+                                    onEachFeature={(district, layer) => {
+                                        const districtName = district.properties.village + ', ' + district.properties.district;
+                                        // layer.bindTooltip(districtName,
+                                        //     { permanent: true, className: 'label' }
+                                        // )
+                                        layer.on({
+                                            click: function (e) {
+                                                layer.bindPopup(districtName).openPopup();
+                                                setRegulasi(e.target.feature.properties.district_code)
+                                                setVillage(e.target.feature.properties.village_code)
+                                                //setClickMap(false)
+                                                setLoading(true)
+                                            }
+                                        })
 
-                                    layer.on('mouseover', function (e) {
                                         layer.bindTooltip(districtName).openTooltip();
-                                        e.target.setStyle({
-                                            fillColor: "black"
-                                        })
-                                    });
 
-                                    layer.on('mouseout', function (e) {
-                                        layer.bindTooltip(districtName).closeTooltip();
-                                        e.target.setStyle({
-                                            fillColor: `${item.color}`
-                                        })
-                                    });
+                                        layer.on('mouseover', function (e) {
+                                            //layer.bindTooltip(districtName).openTooltip();
+                                            e.target.setStyle({
+                                                fillColor: "black"
+                                            })
+                                        });
+
+                                        layer.on('mouseout', function (e) {
+                                            //layer.bindTooltip(districtName).closeTooltip();
+                                            e.target.setStyle({
+                                                fillColor: `${item.color}`
+                                            })
+                                        });
 
 
-                                }}
+                                    }}
 
-                            />
+                                />
+                            ))
+
                         ))
                     }
 
