@@ -3,7 +3,6 @@ import { PiCircleFill } from 'react-icons/pi';
 import { MapContainer, TileLayer, GeoJSON, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css'
 import Bwi from '../banyuwangi.json'
-import { useState } from 'react';
 
 
 

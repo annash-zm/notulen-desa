@@ -40,17 +40,9 @@ const LeafletMap = () => {
     useEffect(() => {
         //if idDistrict exist
 
-        const vill = data?.find(e => e.id === regulasi)?.data?.content?.filter(e => e.id_village === village)?.length
-        const dist = data?.filter(e => e.id === regulasi)?.length
-        // if ((dist === 0 || vill === 0) && !clickMap) {
-        //     Swal.fire({
-        //         title: 'Error',
-        //         text: 'Data di desa ini tidak ada',
-        //         icon: 'error',
-        //         confirmButtonText: 'Ok'
-        //     })
-        //     setClickMap(true)
-        // }
+        //const vill = data?.find(e => e.id === regulasi)?.data?.content?.filter(e => e.id_village === village)?.length
+        //const dist = data?.filter(e => e.id === regulasi)?.length
+        
         data?.find(e => e.id === regulasi)?.data?.content.length > 0 &&
             setContent(data?.find(e => e.id === regulasi)?.data?.content)
         setTimeout(()=>{
