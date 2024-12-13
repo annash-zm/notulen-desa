@@ -7,7 +7,7 @@ import Bwi from '../banyuwangi.json'
 
 
 const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
-    const position = [-8.17135, 114.2840704]
+    const position = [-8.22135, 114.2840704]
     // const [kecamatan, setKecamatan] = useState([
     //     { id: 'id3510100', color: 'blue', villageName : "Genteng" },
     //     { id: 'id3510210', color: 'yellow', villageName : "Wongsorejo" },
@@ -60,8 +60,8 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
 
                     <GeoJSON
                         style={{
-                            fillColor: "red",
-                            fillOpacity: 0.2,
+                            fillColor: "gray",
+                            fillOpacity: 0.6,
                             color: "black",
                             weight: 0.2,
                         }}
@@ -98,7 +98,7 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
                                         layer.bindTooltip(districtName).openTooltip();
 
                                         layer.on('mouseover', function (e) {
-                                            //layer.bindTooltip(districtName).openTooltip();
+                                            layer.bindPopup(districtName).closePopup();
                                             e.target.setStyle({
                                                 fillColor: "black"
                                             })

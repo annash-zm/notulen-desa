@@ -53,7 +53,6 @@ const LeafletMap = () => {
 
     return (
         <section className='flex flex-col'>
-            <Nav />
             <div className='bg-indigo-50 '>
                 <div className='px-10 max-lg:px-5 mt-5'>
                     <div className='bg-indigo-100 flex flex-col rounded-lg border-[1px] border-indigo-500 p-3'>

@@ -1,10 +1,10 @@
-import LeafletMap from './leaflet/LeafletMap'
+import Routers from './routers/Routers'
 
 function App() {
 
   return (
-    <main className=''>
-      <LeafletMap />
+    <main className='bg-indigo-50'>
+      <Routers />
     </main>
   )
 }
