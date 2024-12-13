@@ -36,9 +36,9 @@ const InputData = () => {
                             />
                             <span className='font-semibold text-lg text-indigo-500'>Notes</span>
                         </div>
-                        <span className='max-lg:text-sm'>
+                        <span className='max-lg:text-xs'>
                             Reset Data terlebih dahulu sebelum menambahkan data yang baru 
-                            <button className='bg-red-500 px-2 py-1 text-sm text-white ml-2 rounded-lg'>
+                            <button className='bg-red-500 px-2 py-1 text-sm max-lg:text-xs max-lg:ml-1 text-white ml-2 rounded-lg'>
                                     Reset
                             </button>
                         </span>

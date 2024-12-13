@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { BsInputCursor } from 'react-icons/bs'
 import { FaBars } from 'react-icons/fa'
 import { RxDashboard } from 'react-icons/rx'
 import { SiDatabricks } from 'react-icons/si'
@@ -9,7 +8,7 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <header style={{ zIndex: 9999 }} className='sticky top-0 bg-white shadow-sm px-10 max-lg:px-5 py-5'>
+            <header style={{ zIndex: 9999, backgroundColor:"#F8F8FF" }} className='sticky top-0 shadow-sm px-10 max-lg:px-2 py-2'>
                 <nav className='flex items-center justify-between relative'>
                     <div className='flex items-center gap-1'>
                         <img

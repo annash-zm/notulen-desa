@@ -32,7 +32,7 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
         <div className='relative py-5 px-10 max-lg:px-5'>
             <div className=''>
                 <MapContainer
-                    className='border-[1px] border-black rounded-lg w-[600px] h-[600px] max-lg:h-[350px] max-lg:w-[340px]'
+                    className={`border-[1px] border-black rounded-lg w-[${window.innerWidth}] h-[600px] max-lg:h-[300px]`}
                     center={position} zoom={9.5}
                     scrollWheelZoom={true}>
                     <TileLayer
