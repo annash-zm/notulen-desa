@@ -11,7 +11,7 @@ const Nav = () => {
         <>
             <header style={{ zIndex: 9999 }} className='sticky top-0 bg-white shadow-sm px-10 max-lg:px-5 py-5'>
                 <nav className='flex items-center justify-between relative'>
-                    <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-1'>
                         <img
                             src="https://dlh.banyuwangikab.go.id/images/bwh.webp"
                             className='w-[110px] max-lg:w-[80px]'
