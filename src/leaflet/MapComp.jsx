@@ -32,8 +32,8 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
         <div className='relative py-5 px-10 max-lg:px-5'>
             <div className=''>
                 <MapContainer
-                    className={`border-[1px] border-black rounded-lg w-[${window.innerWidth}] h-[600px] max-lg:h-[300px]`}
-                    center={position} zoom={9.5}
+                    className={`border-[1px] border-black rounded-lg w-[${window.innerWidth}] h-[600px] max-sm:h-[350px]`}
+                    center={position} zoom={window.innerWidth < 500 ? 9 : 9.5}
                     scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
