@@ -8,7 +8,7 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <header style={{ zIndex: 9999, backgroundColor:"#F8F8FF" }} className='sticky top-0 shadow-sm px-10 max-lg:px-2 py-2'>
+            <header style={{ zIndex: 9999, backgroundColor:"#F8F8FF" }} className='sticky top-0 shadow-sm px-10 max-lg:px-5 py-2'>
                 <nav className='flex items-center justify-between relative'>
                     <div className='flex items-center gap-1'>
                         <img
