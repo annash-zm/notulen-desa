@@ -30,7 +30,7 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
 
     return (
         <div className='relative py-5 px-10 max-lg:px-5'>
-            <div className='sticky top-20'>
+            <div className=''>
                 <MapContainer
                     className='border-[1px] border-black rounded-lg w-[600px] h-[600px] max-lg:h-[350px] max-lg:w-[340px]'
                     center={position} zoom={9.5}
@@ -61,7 +61,7 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
                     <GeoJSON
                         style={{
                             fillColor: "gray",
-                            fillOpacity: 0.6,
+                            fillOpacity: 0.7,
                             color: "black",
                             weight: 0.2,
                         }}

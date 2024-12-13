@@ -19,12 +19,12 @@ const InputData = () => {
     }
     useEffect(() => {
         toOption()
-    })
+    },[])
 
     return (
         <section className='bg-indigo-50'>
-            <div className='p-10'>
-                <div className='bg-white p-10 rounded-lg'>
+            <div className='p-10 max-lg:p-5'>
+                <div className='bg-white p-10 max-lg:p-5 rounded-lg'>
                     <h1 className='text-xl mb-5 font-bold'>
                         Input Data
                     </h1>
@@ -36,15 +36,15 @@ const InputData = () => {
                             />
                             <span className='font-semibold text-lg text-indigo-500'>Notes</span>
                         </div>
-                        <span>
+                        <span className='max-lg:text-sm'>
                             Reset Data terlebih dahulu sebelum menambahkan data yang baru 
                             <button className='bg-red-500 px-2 py-1 text-sm text-white ml-2 rounded-lg'>
                                     Reset
                             </button>
                         </span>
                     </div>
-                    <div className='grid grid-cols-2 gap-10'>
-                        <div className='flex flex-col mt-5 w-1/2'>
+                    <div className='grid grid-cols-2 max-lg:flex max-lg:flex-col max-lg:gap-2 gap-10'>
+                        <div className='flex flex-col mt-5 w-1/2 max-lg:w-full'>
                             <span className='mb-2'>Kecamatan</span>
                             <Select
                                 className="basic-single max-lg:w-full text-base"
@@ -65,7 +65,7 @@ const InputData = () => {
                     </div>
 
 
-                    <div className='grid grid-cols-2 gap-10'>
+                    <div className='grid grid-cols-2 gap-10 max-lg:flex max-lg:flex-col max-lg:gap-2'>
                         <div className='flex flex-col mt-5'>
                             <span className='mb-2'>Waktu</span>
                             <input className='p-2 rounded-lg border-[1px] ' />
@@ -76,7 +76,7 @@ const InputData = () => {
                         </div>
                     </div>
 
-                    <div className='flex flex-col mt-5 w-1/4'>
+                    <div className='flex flex-col mt-5 w-1/4 max-lg:w-full'>
                         <span className='mb-2'>Upload Excel</span>
                         <input type='file' className='' />
                     </div>

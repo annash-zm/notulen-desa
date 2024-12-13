@@ -71,7 +71,7 @@ const LeafletMap = () => {
                     {!loading ?
                         <div className='bg-white rounded-lg my-5 mx-10 max-lg:mx-5 border-[1px] border-black pb-5 max-lg:text-xs'>
                             <div className='flex flex-col px-5 pt-5 mb-3'>
-                                <h1 className='font-semibold'>Notulen {data?.filter(e => e.id === regulasi)[0]?.district} - {data?.filter(e => e.id === regulasi)[0]?.data?.content?.filter(e => e.id_village === village)[0]?.name_village}</h1>
+                                <h1 className='font-semibold text-xl max-lg:text-base max-lg:leading-tight max-lg:mb-2'>Kec. {data?.filter(e => e.id === regulasi)[0]?.district} - {data?.filter(e => e.id === regulasi)[0]?.data?.content?.filter(e => e.id_village === village)[0]?.name_village}</h1>
                                 <span className='text-sm max-lg:text-xs'>Diskusi Kelompok Terarah “Studi Awal Perilaku Pengelolaan Sampah Tingkat Desa”</span>
                                 <div className='flex items-center gap-2 max-lg:flex-col max-lg:items-start max-lg:gap-0'>
                                     <div className='flex items-center gap-1 mt-3 text-gray-700'>
