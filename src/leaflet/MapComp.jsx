@@ -7,7 +7,7 @@ import Bwi from '../banyuwangi.json'
 
 
 const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
-    const position = [-8.22135, 114.2840704]
+    const position = [-8.25135, 114.2840704]
     // const [kecamatan, setKecamatan] = useState([
     //     { id: 'id3510100', color: 'blue', villageName : "Genteng" },
     //     { id: 'id3510210', color: 'yellow', villageName : "Wongsorejo" },
@@ -23,6 +23,7 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
         map.eachLayer(layer => {
             layer.closeTooltip()
         })
+        map.attributionControl.setPrefix(false)
     }
 
 
@@ -36,7 +37,7 @@ const MapComp = ({ layer, setLoading, setRegulasi, setVillage }) => {
                     center={position} zoom={window.innerWidth < 500 ? 9 : 9.5}
                     scrollWheelZoom={true}>
                     <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        attribution=''
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <CloseAll />

@@ -23,12 +23,12 @@ const InputData = () => {
 
     return (
         <section className='bg-indigo-50'>
-            <div className='p-10 max-lg:p-5'>
+            <div className='px-10 py-5 max-lg:p-5'>
                 <div className='bg-white p-10 max-lg:p-5 rounded-lg'>
                     <h1 className='text-xl mb-5 font-bold'>
                         Input Data
                     </h1>
-                    <div className='bg-indigo-50 p-5 flex-flex-col gap-5 border-[1px] border-indigo-500 rounded-lg'>
+                    <div className='bg-indigo-50 p-5 flex flex-col gap-1 border-[1px] border-indigo-500 rounded-lg'>
                         <div className='flex gap-2 items-center'>
                             <CgNotes 
                                 size={20}
@@ -36,7 +36,7 @@ const InputData = () => {
                             />
                             <span className='font-semibold text-lg text-indigo-500'>Notes</span>
                         </div>
-                        <span className='max-lg:text-xs'>
+                        <span className='max-lg:text-xs text-slate-500'>
                             Reset Data terlebih dahulu sebelum menambahkan data yang baru 
                             <button className='bg-red-500 px-2 py-1 text-sm max-lg:text-xs max-lg:ml-1 text-white ml-2 rounded-lg'>
                                     Reset
@@ -60,7 +60,7 @@ const InputData = () => {
                         </div>
                         <div className='flex flex-col mt-5'>
                             <span className='mb-2'>Lokasi</span>
-                            <input className='p-2 rounded-lg border-[1px] ' />
+                            <input placeholder='Lokasi Kegiatan' className='p-2 rounded-lg border-[1px] ' />
                         </div>
                     </div>
 
@@ -68,11 +68,11 @@ const InputData = () => {
                     <div className='grid grid-cols-2 gap-10 max-lg:flex max-lg:flex-col max-lg:gap-2'>
                         <div className='flex flex-col mt-5'>
                             <span className='mb-2'>Waktu</span>
-                            <input className='p-2 rounded-lg border-[1px] ' />
+                            <input placeholder='ex : Selasa, 4 Desember 2024' className='p-2 rounded-lg border-[1px] ' />
                         </div>
                         <div className='flex flex-col mt-5'>
                             <span className='mb-2'>Kegiatan</span>
-                            <input className='p-2 rounded-lg border-[1px] ' />
+                            <input placeholder='Judul Kegiatan/Agenda' className='p-2 rounded-lg border-[1px] ' />
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@ const InputData = () => {
                     </div>
                     <div className=' mt-10'>
                         <button type='submit'
-                            className='rounded-lg bg-blue-500 px-3 py-2 text-white'
+                            className='rounded-lg text-lg bg-blue-500 px-3 py-2 text-white'
                         >
                             Submit
                         </button>

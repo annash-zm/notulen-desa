@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { RxDashboard } from 'react-icons/rx'
 import { SiDatabricks } from 'react-icons/si'
@@ -8,7 +8,7 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
     return (
         <>
-            <header style={{ zIndex: 9999, backgroundColor:"#F8F8FF" }} className='sticky top-0 shadow-sm px-10 max-lg:px-5 py-2'>
+            <header style={{ zIndex: 9999, backgroundColor:"#F0F8FF" }} className='sticky top-0 shadow-sm px-10 max-lg:px-5 py-2'>
                 <nav className='flex items-center justify-between relative'>
                     <div className='flex items-center gap-1'>
                         <img
@@ -58,7 +58,7 @@ const Nav = () => {
                                         />
                                     </div>
                                     <div>
-                                        <span>Input Data</span>
+                                        <span>Meta Data</span>
                                     </div>
                                 </div>
                             </NavLink>
@@ -81,7 +81,7 @@ const Nav = () => {
                             to={'/input-data'}
                             reloadDocument
                         >
-                            <span>Input Data</span>
+                            <span>Meta Data</span>
                         </NavLink>
                     </div>
                 </nav>
