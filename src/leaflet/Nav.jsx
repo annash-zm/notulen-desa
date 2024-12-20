@@ -16,7 +16,7 @@ const Nav = () => {
                             className='w-[110px] max-lg:w-[80px]'
                         />
                         <div className='flex flex-col'>
-                            <h1 className='font-semibold text-lg max-lg:text-sm'>Studi Pengenalan Awal</h1>
+                            <h1 className='font-semibold text-lg max-lg:text-sm text-green-800'>Studi Pengenalan Awal</h1>
                             <span className='text-sm text-slate-700 max-lg:text-xs'>Kabupaten Banyuwangi</span>
                         </div>
                     </div>
