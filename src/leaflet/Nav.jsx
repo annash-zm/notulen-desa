@@ -35,7 +35,7 @@ const Nav = () => {
                                 to={'/'}
                                 reloadDocument
                                 className={({ isActive, isPending }) =>
-                                    isActive ? "text-blue-600" : ''
+                                    isActive ? "text-green-800" : ''
                                 }
                             >
                                 <div className='flex items-center gap-1'>
@@ -48,7 +48,7 @@ const Nav = () => {
                                 to={'/input-data'}
                                 reloadDocument
                                 className={({ isActive, isPending }) =>
-                                    isActive ? "text-blue-600" : ''
+                                    isActive ? "text-green-800" : ''
                                 }
                             >
                                 <div className=' flex gap-x-1 items-center'>
@@ -67,7 +67,7 @@ const Nav = () => {
                     <div className='flex max-lg:hidden items-center gap-5 max-lg:text-xs'>
                         <NavLink
                             className={({ isActive, isPending }) =>
-                                isActive ? "border-b-[2px] border-indigo-500 px-2 pt-1 pb-2 text-indigo-800 text-base" : " rounded-lg px-2 pt-1 pb-2 text-gray-800 text-base"
+                                isActive ? "border-b-[2px] border-green-800 px-2 pt-1 pb-2 text-green-800 text-base" : " rounded-lg px-2 pt-1 pb-2 text-gray-800 text-base"
                             }
                             to={'/'}
                             reloadDocument
@@ -76,7 +76,7 @@ const Nav = () => {
                         </NavLink>
                         <NavLink
                             className={({ isActive, isPending }) =>
-                                isActive ? "border-b-[2px] border-indigo-500 px-2 pt-1 pb-2 text-indigo-800 text-base" : " rounded-lg px-2 pt-1 pb-2 text-gray-800 text-base"
+                                isActive ? "border-b-[2px] border-green-800 px-2 pt-1 pb-2 text-green-800 text-base" : " rounded-lg px-2 pt-1 pb-2 text-gray-800 text-base"
                             }
                             to={'/input-data'}
                             reloadDocument
